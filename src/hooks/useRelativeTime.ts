@@ -1,4 +1,5 @@
 import { useMount } from "react-use"
+import type { RelativeTimeResult } from "@shared/utils"
 
 /**
  * changed every minute
@@ -26,17 +27,15 @@ function useVisibility() {
   return visible
 }
 
-export function useRelativeTime(timestamp: string | number) {
-  const [time, setTime] = useState<string>()
+export function useRelativeTime(timestamp: string | number): RelativeTimeResult | undefined {
+  const [time, setTime] = useState<RelativeTimeResult>()
   const timer = useAtomValue(timerAtom)
   const visible = useVisibility()
 
   useEffect(() => {
     if (visible) {
       const t = relativeTime(timestamp)
-      if (t) {
-        setTime(t)
-      }
+      setTime(t)
     }
   }, [timestamp, timer, visible])
 

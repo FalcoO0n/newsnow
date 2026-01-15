@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query"
 import { AnimatePresence, motion, useInView } from "framer-motion"
 import { useWindowSize } from "react-use"
 import { forwardRef, useImperativeHandle } from "react"
+import { useTranslation } from "react-i18next"
 import { OverlayScrollbar } from "../common/overlay-scrollbar"
 import { safeParseString } from "~/utils"
 
@@ -171,10 +172,23 @@ function NewsCard({ id, setHandleRef }: NewsCardProps) {
 }
 
 function UpdatedTime({ isError, updatedTime }: { updatedTime: any, isError: boolean }) {
-  const relativeTime = useRelativeTime(updatedTime ?? "")
-  if (relativeTime) return `${relativeTime}更新`
-  if (isError) return "获取失败"
-  return "加载中..."
+  const { t } = useTranslation()
+  const relativeTimeData = useRelativeTime(updatedTime ?? "")
+
+  if (relativeTimeData) {
+    switch (relativeTimeData.type) {
+      case "justNow":
+        return `${t("relativeTime.justNow")}${t("card.updated")}`
+      case "minutesAgo":
+        return `${t("relativeTime.minutesAgo", { count: relativeTimeData.value })}${t("card.updated")}`
+      case "hoursAgo":
+        return `${t("relativeTime.hoursAgo", { count: relativeTimeData.value })}${t("card.updated")}`
+      case "monthDay":
+        return `${t("relativeTime.monthDay", { month: relativeTimeData.value.month, day: relativeTimeData.value.day })}`
+    }
+  }
+  if (isError) return t("card.fetchFailed")
+  return t("card.loading")
 }
 
 function DiffNumber({ diff }: { diff: number }) {
@@ -223,8 +237,21 @@ function ExtraInfo({ item }: { item: NewsItem }) {
 }
 
 function NewsUpdatedTime({ date }: { date: string | number }) {
-  const relativeTime = useRelativeTime(date)
-  return <>{relativeTime}</>
+  const { t } = useTranslation()
+  const relativeTimeData = useRelativeTime(date)
+
+  if (!relativeTimeData) return null
+
+  switch (relativeTimeData.type) {
+    case "justNow":
+      return <>{t("relativeTime.justNow")}</>
+    case "minutesAgo":
+      return <>{t("relativeTime.minutesAgo", { count: relativeTimeData.value })}</>
+    case "hoursAgo":
+      return <>{t("relativeTime.hoursAgo", { count: relativeTimeData.value })}</>
+    case "monthDay":
+      return <>{t("relativeTime.monthDay", { month: relativeTimeData.value.month, day: relativeTimeData.value.day })}</>
+  }
 }
 function NewsListHot({ items }: { items: NewsItem[] }) {
   const { width } = useWindowSize()

@@ -31,9 +31,6 @@
   "producthunt": "Product Hunt",
   "github-trending-today": "Github-Today",
   "bilibili-hot-search": "bilibili-resou",
-  "bilibili-hot-video": "bilibili-remenshipin",
-  "bilibili-ranking": "bilibili-paixingbang",
-  "kuaishou": "kuaishou",
   "kaopu": "kaopuxinwen",
   "jin10": "jinshishuju",
   "baidu": "baiduresou",
@@ -48,5 +45,13 @@
   "tencent-hot": "tengxunxinwen-zonghezaobao",
   "freebuf": "Freebuf-wangluoanquan",
   "qqvideo-tv-hotsearch": "tengxunshipin-resoubang",
-  "iqiyi-hot-ranklist": "aiqiyi-rebobang"
+  "iqiyi-hot-ranklist": "aiqiyi-rebobang",
+  "bbc": "BBC News",
+  "cnn": "CNN",
+  "reuters": "Reuters",
+  "guardian": "The Guardian",
+  "techcrunch": "TechCrunch",
+  "verge": "The Verge",
+  "arstechnica": "Ars Technica",
+  "wired": "Wired"
 }

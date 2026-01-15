@@ -368,35 +368,6 @@
     "interval": 600000,
     "title": "热搜"
   },
-  "bilibili-hot-video": {
-    "name": "哔哩哔哩",
-    "type": "hottest",
-    "disable": "cf",
-    "column": "china",
-    "home": "https://www.bilibili.com",
-    "color": "blue",
-    "interval": 600000,
-    "title": "热门视频"
-  },
-  "bilibili-ranking": {
-    "name": "哔哩哔哩",
-    "type": "hottest",
-    "disable": "cf",
-    "column": "china",
-    "home": "https://www.bilibili.com",
-    "color": "blue",
-    "interval": 1800000,
-    "title": "排行榜"
-  },
-  "kuaishou": {
-    "name": "快手",
-    "type": "hottest",
-    "disable": "cf",
-    "column": "china",
-    "home": "https://www.kuaishou.com",
-    "color": "orange",
-    "interval": 600000
-  },
   "kaopu": {
     "name": "靠谱新闻",
     "desc": "不一定靠谱，多看多思考",
@@ -563,5 +534,69 @@
     "color": "green",
     "interval": 1800000,
     "title": "热播榜"
+  },
+  "bbc": {
+    "name": "BBC News",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.bbc.com/news",
+    "color": "red",
+    "interval": 300000
+  },
+  "cnn": {
+    "name": "CNN",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.cnn.com",
+    "color": "red",
+    "interval": 300000
+  },
+  "reuters": {
+    "name": "Reuters",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.reuters.com",
+    "color": "orange",
+    "interval": 300000
+  },
+  "guardian": {
+    "name": "The Guardian",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.theguardian.com/international",
+    "color": "blue",
+    "interval": 300000
+  },
+  "techcrunch": {
+    "name": "TechCrunch",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://techcrunch.com",
+    "color": "green",
+    "interval": 300000
+  },
+  "verge": {
+    "name": "The Verge",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://www.theverge.com",
+    "color": "purple",
+    "interval": 300000
+  },
+  "arstechnica": {
+    "name": "Ars Technica",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://arstechnica.com",
+    "color": "red",
+    "interval": 1800000
+  },
+  "wired": {
+    "name": "Wired",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://www.wired.com",
+    "color": "black",
+    "interval": 1800000
   }
 }
