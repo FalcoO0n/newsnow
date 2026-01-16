@@ -178,11 +178,11 @@ function UpdatedTime({ isError, updatedTime }: { updatedTime: any, isError: bool
   if (relativeTimeData) {
     switch (relativeTimeData.type) {
       case "justNow":
-        return `${t("relativeTime.justNow")}${t("card.updated")}`
+        return `${t("relativeTime.justNow")} ${t("card.updated")}`
       case "minutesAgo":
-        return `${t("relativeTime.minutesAgo", { count: relativeTimeData.value })}${t("card.updated")}`
+        return `${t("relativeTime.minutesAgo", { count: relativeTimeData.value })} ${t("card.updated")}`
       case "hoursAgo":
-        return `${t("relativeTime.hoursAgo", { count: relativeTimeData.value })}${t("card.updated")}`
+        return `${t("relativeTime.hoursAgo", { count: relativeTimeData.value })} ${t("card.updated")}`
       case "monthDay":
         return `${t("relativeTime.monthDay", { month: relativeTimeData.value.month, day: relativeTimeData.value.day })}`
     }
