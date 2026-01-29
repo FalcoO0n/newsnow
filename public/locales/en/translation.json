@@ -1,0 +1,48 @@
+{
+  "navbar": {
+    "more": "More"
+  },
+  "columns": {
+    "china": "China",
+    "world": "World",
+    "tech": "Technology",
+    "finance": "Finance",
+    "focus": "Following",
+    "realtime": "Real-time",
+    "hottest": "Trending",
+    "uncategorized": "Uncategorized"
+  },
+  "card": {
+    "updated": "updated",
+    "fetchFailed": "Failed to fetch",
+    "loading": "Loading...",
+    "dragging": "Dragging"
+  },
+  "search": {
+    "placeholder": "Search sources...",
+    "noResults": "No results found. Submit an issue on GitHub",
+    "swipeHint": "Swipe left/right to see more"
+  },
+  "menu": {
+    "logout": "Logout",
+    "githubLogin": "Login with GitHub",
+    "starOnGithub": "Star on GitHub"
+  },
+  "auth": {
+    "loginRequired": "Login required to force refresh latest data",
+    "login": "Login",
+    "authFailed": "Authentication failed, unable to sync. Please login again"
+  },
+  "updates": {
+    "updateSuccess": "Update successful! Check it out now",
+    "viewUpdate": "View Update",
+    "updateAvailable": "Update available, updating in 5 seconds",
+    "updateNow": "Update Now"
+  },
+  "relativeTime": {
+    "justNow": "just now",
+    "minutesAgo": "{{count}} minutes ago",
+    "hoursAgo": "{{count}} hours ago",
+    "monthDay": "{{month}}/{{day}}"
+  }
+}

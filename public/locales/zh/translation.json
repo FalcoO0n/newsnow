@@ -1,0 +1,48 @@
+{
+  "navbar": {
+    "more": "更多"
+  },
+  "columns": {
+    "china": "国内",
+    "world": "国际",
+    "tech": "科技",
+    "finance": "财经",
+    "focus": "关注",
+    "realtime": "实时",
+    "hottest": "最热",
+    "uncategorized": "未分类"
+  },
+  "card": {
+    "updated": "更新",
+    "fetchFailed": "获取失败",
+    "loading": "加载中...",
+    "dragging": "拖拽中"
+  },
+  "search": {
+    "placeholder": "搜索你想要的",
+    "noResults": "没有找到，可以前往 Github 提 issue",
+    "swipeHint": "左右滑动查看更多"
+  },
+  "menu": {
+    "logout": "退出登录",
+    "githubLogin": "Github 账号登录",
+    "starOnGithub": "Star on Github"
+  },
+  "auth": {
+    "loginRequired": "登录后可以强制拉取最新数据",
+    "login": "登录",
+    "authFailed": "身份校验失败，无法同步，请重新登录"
+  },
+  "updates": {
+    "updateSuccess": "更新成功，赶快体验吧",
+    "viewUpdate": "查看更新",
+    "updateAvailable": "有更新，5 秒后自动更新",
+    "updateNow": "立刻更新"
+  },
+  "relativeTime": {
+    "justNow": "刚刚",
+    "minutesAgo": "{{count}}分钟前",
+    "hoursAgo": "{{count}}小时前",
+    "monthDay": "{{month}}月{{day}}日"
+  }
+}

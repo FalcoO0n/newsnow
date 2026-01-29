@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router"
 import { useIsFetching } from "@tanstack/react-query"
 import type { SourceID } from "@shared/types"
+import { LanguageSwitcher } from "../language-switcher"
 import { NavBar } from "../navbar"
 import { Menu } from "./menu"
 import { currentSourcesAtom, goToTopAtom } from "~/atoms"
@@ -72,6 +73,7 @@ export function Header() {
         <GoTop />
         <Refresh />
         <Github />
+        <LanguageSwitcher />
         <Menu />
       </span>
     </>
